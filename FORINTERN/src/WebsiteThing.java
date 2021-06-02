@@ -7,6 +7,21 @@ public class WebsiteThing {
     private double intValue2;
     private Object IllegalArgumentException;
 
+
+    /**
+     * funqciad mecera tavidan da gadmovakete exla, imedia didi kvali ar darcha dzveli chanafiqris :]
+     */
+    public static void main(String[] args) throws Throwable {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter First Currency: ");
+        String first = sc.nextLine();
+        System.out.println("Enter Second Currency");
+        String second = sc.nextLine();
+
+        WebsiteThing thing = new WebsiteThing();
+        System.out.println("The Exchange Rate Is: " + thing.getCourse(first,second));
+
+    }
     public WebsiteThing() {
         intValue1 = -1;
         intValue2 = -2;
@@ -43,7 +58,7 @@ public class WebsiteThing {
 
             if( intValue1 >= 0 && intValue2 >= 0) break;
 
-            }
+        }
         if( intValue1 >= 0 && intValue2 >= 0) {
             double result = intValue1 / intValue2;
             return result;
